@@ -12,3 +12,8 @@ add_executable(lowpass_filter
 
 target_link_libraries(lowpass_filter ${catkin_LIBRARIES})
 
+## by OJ since ros.h was not found
+INCLUDE_DIRECTORIES(
+include
+${catkin_INCLUDE_DIRS}
+)
